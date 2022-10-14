@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.backgroundImage{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://img5.goodfon.com/original/1920x1080/7/38/villa-interer-komnata-kukhnia-luxury-kitchen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff4d4d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navLogo{
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section .Container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+section .Container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #ff4d4d;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+}
+
+section .Container .contactinfo h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .Container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+
+section .Container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+section .Container .contactinfo .info li p:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+section .Container .contactinfo .info li p:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1); 
+    opacity: 0.5;
+}
+
+section .Container .contactinfo .info li p:nth-child(2){
+    color: white;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+section .Container .contactinfo .info li:hover p:nth-child(1) img,
+section .Container .contactinfo .info li:hover p:nth-child(2){
+    opacity: 1;
+}
+
+section .Container .contactinfo .sci{
+    position: relative;
+    display: flex;
+}
+
+section .Container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+section .Container .contactinfo .sci li a{
+    text-decoration: none;
+}
+
+
+section .Container .contactinfo .sci li a img{
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+section .Container .contactinfo .sci li:hover a img{
+    opacity: 1;
+}
+
+section .Container .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+section .Container .contactForm h2{
+    color: #ff4d4d;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .Container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+section .Container .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+section .Container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+
+section .Container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+
+section .Container .contactForm .formBox .inputBox input,
+section .Container .contactForm .formBox .inputBox textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+section .Container .contactForm .formBox .inputBox textarea{
+    min-height: 120px;
+}
+
+section .Container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+section .Container .contactForm .formBox .inputBox input:focus ~ span,
+section .Container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .Container .contactForm .formBox .inputBox input:valid ~ span,
+section .Container .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff4d4d;
+}
+
+section .Container .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+section .Container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: #000;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.html{
+    height:100%;
+}
+.backgroundImage{
+    width: 100%;
+ 
+    z-index: 1;
+}
+
+body{
+    background: rgb(39,39,50);
+    background: linear-gradient(90deg, rgba(39,39,50,1) 0%, rgba(102,97,112,1) 66%, rgba(177,176,187,1) 88%);
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff4d4d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navLogo{
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container{
+    z-index: 100;
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.card{
+    
+    background:white;
+    width:220px;
+    height:400px;
+    margin:10px;
+    border-radius: 15px;
+    margin-left:60px ;
+   
+}
+
+.card-image{
+    background-color:aqua;
+    height:260px;
+    margin-bottom:15px;
+    background-size:cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card:hover{
+    background-color:gray;
+    color:white;
+    
+    transform:scale(1.05);
+    transition:all 0.5s ease;
+}
+
+.card a{
+    background-color: black;
+    color:white;
+    padding:15px 20px;
+    display:block;
+    text-align: center;
+    margin:20px 30px;
+    text-decoration:none;
+    border-radius: 25px;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.car-1{
+    background-image: url('categories/appetizers.jpg');
+}
+
+.car-2{
+    background-image: url('categories/asian-inspired.jpg');
+}
+
+.car-3{
+    background-image: url('categories/bread.jpg');
+}
+
+.car-4{
+    background-image: url('categories/breakfast.jpg');
+}
+
+.car-5{
+    background-image: url('categories/chicken.jpg');
+}
+
+.car-6{
+    background-image: url('categories/christmas.jpg');
+}
+
+.car-7{
+    background-image: url('categories/dessert.jpg');
+}
+
+.car-8{
+    background-image: url('categories/dinner.jpg');
+}
+
+.car-9{
+    background-image: url('categories/drink.jpg');
+}
+
+.car-10{
+    background-image: url('categories/entree.jpg');
+}
+
+.car-11{
+    background-image: url('categories/fall.jpg');
+}
+
+.car-12{
+    background-image: url('categories/lunch.jpg');
+}
+
+.car-13{
+    background-image: url('categories/mealprep.jpg');
+}
+
+.car-14{
+    background-image: url('categories/pasta.jpg');
+}
+
+.car-15{
+    background-image: url('categories/quickneasy.jpg');
+}
+
+.car-16{
+    background-image: url('categories/salad.jpg');
+}
+
+.car-17{
+    background-image: url('categories/sidedish.jpg');
+}
+
+.car-18{
+    background-image: url('categories/slowcooker.jpg');
+}
+
+.car-19{
+    background-image: url('categories/soup.jpg');
+}
+
+.car-20{
+    background-image: url('categories/thanksgiving.jpg');
+}
+
+.car-21{
+    background-image: url('categories/vegetarian.jpg');
+}
+

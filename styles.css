@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.backgroundImage{
+    width: 100%;
+    height:795px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://img5.goodfon.com/original/1920x1080/7/38/villa-interer-komnata-kukhnia-luxury-kitchen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff4d4d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navLogo{
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search{
+    width: 100%;
+    padding: 10xp;
+    font-size:17px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+
+.search h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.search p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+  .searchBar{
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+  }
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ff4d4d;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+button:hover span{
+    width: 100%;
+
+}
+
+button:hover{
+    border: none;
+}
+
+span{
+    background: #ff4d4d;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.ingredients{
+  padding-left: 0px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.ingredients ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.ingredients ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.ingredients ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff4d4d;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.ingredients ul li:hover::after{
+    width: 100%;
+}
+
+  .team-section{
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+  }
+  .team-section h1{
+    text-transform: uppercase;
+    margin-top: 10px;
+    color:white;
+    font-size: 40px;
+  }
+
+  .border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background:#ff4d4d;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .ps{
+    margin-bottom: 60px;
+  }
+
+  .ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+  }
+  .ps a:hover > img{
+    filter: none;
+  }
+
+  .section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .section:target{
+    height: auto;
+  }
+
+  .name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  
