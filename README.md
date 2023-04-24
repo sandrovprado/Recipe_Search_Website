@@ -1,5 +1,3 @@
-Sure thing! Here's an example README file for the Recipe Search Website project you described:
-
 # Recipe Search Website
 
 This is a recipe search application designed and implemented using agile methodologies. The purpose of this project is to allow users to search for and discover new recipes.
